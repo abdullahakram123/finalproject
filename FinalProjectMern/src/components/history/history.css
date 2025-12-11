@@ -1,0 +1,366 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.history-body {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    background: #ffffff;
+    color: #000000;
+}
+
+.history-left {
+    width: 100px;
+    background: white;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px 0;
+    position: fixed;
+    height: 100vh;
+    z-index: 1000;
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
+    gap: 20px;
+}
+
+.das-left img {
+    width: 90px;
+    margin-bottom: 30px;
+}
+
+.logo-line {
+    color: #000000;
+    display: block;
+}
+
+.logo-line.accent {
+    color: #ff0000;
+}
+
+.home-icon, .profile-icon, .history-icon {
+    font-size: 40px;
+    color: #000000;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.home-icon:hover, .profile-icon:hover, .history-icon:hover {
+    color: #ff0000;
+    background-color: #f0f0f0;
+}
+
+.history-icon.active {
+    color: #ff0000;
+    background-color: #ffe6e6;
+}
+
+.menu-ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+
+.history-left-ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 280px;
+    list-style: none;
+}
+
+.plus-icon {
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    background: #ff0000;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+
+.plus-icon:hover {
+    background: #cc0000;
+    transform: scale(1.1);
+}
+
+/* Main Content */
+.history-main-content {
+    flex: 1;
+    padding: 40px;
+    overflow-y: auto;
+    background: #f8f9fa;
+}
+
+.history-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.history-header h1 {
+    font-size: 42px;
+    font-weight: 800;
+    background: linear-gradient(135deg, #000000 0%, #333333 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+
+.history-header p {
+    color: #666;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Controls Section */
+.history-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.search-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 65%;
+}
+
+.search-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+}
+
+.search-box input {
+    width: 50%;
+    padding: 12px 15px 12px 45px;
+    border: 2px solid #e0e0e0;
+    border-radius: 25px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background: #ffffff;
+}
+
+.search-box input:focus {
+    outline: none;
+    border-color: #ff0000;
+    box-shadow: 0 0 0 3px rgba(255, 0, 0, 0.1);
+}
+
+.filter-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 10px 20px;
+    border: 2px solid #e0e0e0;
+    border-radius: 20px;
+    background: #ffffff;
+    color: #000000;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+    background: #ff0000;
+    color: white;
+    border-color: #ff0000;
+}
+
+/* History Cards */
+.history-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.history-card {
+    background: #ffffff;
+    border-radius: 20px;
+    border: 2px solid #000000;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.history-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+}
+
+.card-date {
+    background: #000000;
+    color: white;
+    padding: 20px 25px;
+}
+
+.card-date h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.card-content {
+    padding: 25px;
+}
+
+.progress-item {
+    margin-bottom: 20px;
+}
+
+.progress-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.progress-label {
+    font-weight: 600;
+    color: #000000;
+}
+
+.progress-value {
+    font-weight: 600;
+    color: #666;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    background: #f0f0f0;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    border-radius: 4px;
+    transition: width 0.3s ease;
+}
+
+.water-fill {
+    background: linear-gradient(135deg, #4bc0c0, #36a2eb);
+}
+
+.calories-fill {
+    background: linear-gradient(135deg, #ff6384, #ff9f40);
+}
+
+.workout-summary, .diet-summary {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 2px solid #f0f0f0;
+}
+
+.workout-summary h4, .diet-summary h4 {
+    color: #000000;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.workout-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.workout-item {
+    text-align: center;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+}
+
+.workout-type {
+    display: block;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+.workout-value {
+    display: block;
+    color: #ff0000;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.meal-items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.meal-item {
+    padding: 12px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #ff0000;
+}
+
+.card-footer {
+    padding: 20px 25px;
+    background: #f8f9fa;
+    border-top: 2px solid #e0e0e0;
+}
+
+.day-rating {
+    text-align: center;
+}
+
+.rating {
+    font-weight: 700;
+    font-size: 16px;
+    padding: 8px 20px;
+    border-radius: 20px;
+}
+
+.rating.good {
+    background: #e8f5e8;
+    color: #2e7d32;
+}
+
+.rating.average {
+    background: #fff3e0;
+    color: #ff6f00;
+}
+
+.no-data {
+    text-align: center;
+    padding: 60px 20px;
+    color: #666;
+}
+
+.no-data h3 {
+    margin-bottom: 10px;
+    color: #000000;
+}
+@media (max-width:768px){
+    .history-left-ul{
+        gap: 195px;
+    }
+}

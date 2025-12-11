@@ -1,0 +1,99 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+.home-body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.home-navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.logo {
+    width: 130px;
+}
+
+.logo-section {
+    padding-left: 20px;
+}
+
+.home-image img {
+    object-fit: contain;
+    height:555px;
+}
+
+.nav-ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding-right: 20px;
+}
+
+.logo-li {
+    background: none;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    color: #333;
+}
+
+.sign-li {
+    background: none;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    color: #333;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sub {
+    font-size: 30px;
+    color: #555;
+    margin-top: 10px;
+}
+.home-text{
+    line-height: 1.3;
+    padding-left: 10px;
+}
+.home-text .h1 {
+    font-size: 70px;
+    font-weight: 900;
+    line-height: 0.5;
+    color: #ff4d4d;
+}
+
+.heading {
+    color: #ff4d4d;
+    font-size: 85px;
+    font-weight: 900;
+}
+
+.sub {
+    font-size: 30px;
+    color: #555;
+}
+
+.start-btn {
+    margin-top: 25px;
+    background: #ff4d4d;
+    border: none;
+    color: white;
+    padding: 10px 25px 10px 25px;
+    font-size: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(255, 77, 77, 0.3);
+}

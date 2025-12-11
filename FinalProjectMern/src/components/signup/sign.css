@@ -1,0 +1,163 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sign-body {
+    width: 100%;
+    height: 100vh;
+    background: white;
+    overflow: hidden;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.sign-home {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+}
+
+.sign-content {
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    width: 600px;
+    height: 480px;
+    padding: 40px;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 10px 30px rgba(255, 77, 77, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    text-align: center;
+}
+.right-side-sign{
+    margin-top: none;
+}
+.right-side-sign h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: 700;
+    width: 250px;
+}
+
+.fullname label {
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    color: #333;
+    font-weight: 700;
+}
+.fullname input{
+    width: 100%;
+    margin-top: 6px;
+    padding-top: 7px;
+    padding-left: 8px;
+    padding-bottom: 7px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.7);
+    outline: none;
+    border: 1px solid gainsboro;
+    font-size: 15px;
+}
+.username label{
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    color: #333;
+    font-weight: 700;
+}
+.username input{
+    width: 100%;
+    margin-top: 6px;
+    padding-top: 7px;
+    padding-left: 8px;
+    padding-bottom: 7px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.7);
+    outline: none;
+    border: 1px solid gainsboro;
+    font-size: 15px;
+}
+.Email label{
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    color: #333;
+    font-weight: 700;
+}
+.Email input{
+    width: 100%;
+    margin-top: 6px;
+    padding-top: 7px;
+    padding-left: 8px;
+    padding-bottom: 7px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.7);
+    outline: none;
+    border: 1px solid gainsboro;
+    font-size: 15px;
+}
+.pass label{
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    color: #333;
+    font-weight: 700;
+}
+.pass input{
+    width: 100%;
+    margin-top: 6px;
+    padding-top: 7px;
+    padding-left: 8px;
+    padding-bottom: 7px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.7);
+    outline: none;
+    border: 1px solid gainsboro;
+    font-size: 15px;
+}
+.repeat label{
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    color: #333;
+    font-weight: 700;
+}
+.repeat input{
+    width: 100%;
+    margin-top: 6px;
+    padding-top: 7px;
+    padding-left: 8px;
+    padding-bottom: 7px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.7);
+    outline: none;
+    border: 1px solid gainsboro;
+    font-size: 15px;
+}
+.cross1 {
+    position: absolute;
+    border: none;
+    background: none;
+    font-size: 20px;
+    top: 15px;
+    left: 95%;
+}
+.sign-btn{
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 30px;
+    font-size: 17px;
+    background-color: #ff4d4d;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 10px;
+}
